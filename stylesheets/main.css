@@ -6447,3 +6447,20 @@ footer {
 #mainPage img {
   height: 100%;
   width: 100%; }
+
+#pukiImage {
+  position: absolute;
+  left: 35%; }
+
+#btnChal1 {
+  position: absolute;
+  left: 50%;
+  background: cornflowerblue; }
+
+#btnChal2 {
+  position: absolute;
+  left: 50%; }
+
+#btnChal3 {
+  position: absolute;
+  left: 50%; }

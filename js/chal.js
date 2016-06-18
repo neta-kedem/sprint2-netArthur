@@ -39,46 +39,52 @@ function getChalNumById(chalId) {
     switch (chalId) {
         case ('chal1'):
             return 1;
-            break;
         case ('chal2'):
             return 2;
-            break;
         case ('chal3'):
             return 3;
-            break;
         case ('chal4'):
             return 4;
-            break;
     }
 
 }
 
 function reportSolved(chalId) {
-    debugger;
     localStorage.setItem(chalId, Math.max(localStorage.getItem('level'), localStorage.getItem(chalId)));
     switch (chalId) {
         case 'chal1':
-            console.log('chal1');
-            var el = document.querySelector('.chal1');
-            el.innerHTML = '<input type="button" id="1" value="Next Game!" onclick="goToNextChal(this.id)">';        
+            var elChal1 = document.querySelector('.chal1');
+            elChal1.innerHTML = '<input type="button" id="btnChal1" value="Next Game!" onclick="goToNextChal(this.id)">';        
             break;
         case 'chal2':
-            var el = document.querySelector('.chal2');
-            el.innerHTML = '<input type="button" id="2" value="Next Game!" onclick="goToNextChal(this.id)">';
+            var elChal2 = document.querySelector('#chal2');
+            elChal2.innerHTML = '<input type="button" id="btnChal2" value="Next Game!" onclick="goToNextChal(this.id)">';
             break;
         case 'chal3':
-            var el = document.querySelector('.chal3');
-            el.innerHTML = '<input type="button" id="3" value="Show Puki!" onclick="showPuki()">';
+            var elChal3 = document.querySelector('#chal3');
+            elChal3.innerHTML = '<input type="button" id="btnChal3" value="Show Puki!" onclick="showPuki()">';
             break;
         case 'chal4':
-            
-            break;
-        default:
             break;
     }
     
 }
-
+function goToNextChal(chalID) {
+    switch (chalID) {
+        case 'btnChal1':
+            window.location = 'chal2.html';
+            break;
+        case 'btnChal2':
+            window.location = 'chal3.html';
+            break;
+        case 'btnChal3':
+            window.location = 'showPuki.html';
+            break;
+        case 'btnChal4':
+            window.location = 'chal2.html';
+            break;
+    }
+}
 function getNextChal() {
     var unSolvedChals = [];
     gChals.forEach(chalEl => {

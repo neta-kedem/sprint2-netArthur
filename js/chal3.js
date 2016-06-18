@@ -74,7 +74,6 @@ function makeDragNDrop() {
                 gExLeft--;
                 //if no more pieces left
                 if (!gExLeft) {
-                    alert('you won!');
                     reportSolved('chal3');
                     return;
                 }

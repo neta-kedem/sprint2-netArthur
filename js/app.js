@@ -8,15 +8,18 @@ function renderindex() {
         	//add stars accordingly
             $('[data-stars="' + i + '"]').append('<span class="glyphicon glyphicon-star" style="display:inline"></span>');
         }
+    }
+    for (let i = 4; i-1; i--) {
         if(isLocked(i)){
         	$('[data-stars="' + i + '"]').append('<span class="glyphicon glyphicon-lock" style="display:inline"></span>');
         }
-    }
+		
+	}
     updatePrograssBar();
 }
  function isLocked(chalNum){
     //if the game is not yet finished and it is not the next game
- 	return(!(+localStorage.getItem('chal' + chalNum))&&(getNextChal() !== ('chal' + chalNum)))
+ 	return (!(+localStorage.getItem('chal' + chalNum))&&(getNextChal() !== ('chal' + chalNum)))
  }
 
  function updatePrograssBar() {

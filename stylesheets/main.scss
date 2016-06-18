@@ -11,7 +11,6 @@ html {
 header {
     text-align: -webkit-center;
     display: inline-block;
-    // height: 30vw;
     h1 {
         size: 25%;
         top: 0;
@@ -88,11 +87,6 @@ header {
     -o-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     transform: rotate(-10deg);
-    // -webkit-transform: rotate(-8deg);
-    // -moz-transform: rotate(-8deg);
-    // -o-transform: rotate(-8deg);
-    // -ms-transform: rotate(-8deg);
-    // transform: rotate(-8deg);
 }
 
 footer {
@@ -132,4 +126,22 @@ footer {
 #mainPage img {
     height: 100%;
     width: 100%;
+}
+
+#pukiImage {
+    position: absolute;
+    left: 35%;
+}
+#btnChal1 {
+    position: absolute;
+    left: 50%;
+    background: cornflowerblue;
+}
+#btnChal2 {
+    position: absolute;
+    left: 50%;
+}
+#btnChal3 {
+    position: absolute;
+    left: 50%;
 }

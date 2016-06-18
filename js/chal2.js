@@ -85,7 +85,6 @@ function makeMeDroppable() {
                 if (gState.currHiddenNum == gState.numHiddenNum) {
                     //OMG you won the game
                     if (gState.currLine === 9) {
-                        alert('win');
                         reportSolved('chal2');
                         return;
                     }

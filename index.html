@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
-    <script src="lib/jquery.ui.touch-punch.min.js"></script>
+    <!-- <script src="lib/jquery.ui.touch-punch.min.js"></script> -->
 </head>
 
 <body onload="renderindex()">
     <header>
         <div class="sun"></div>
         <h1>Puki's hideaway</h1>
-        <div class="cloud cloudRestart" onclick="restart()">restart</div>
+        <div class="cloud cloudRestart" onclick="refresBtn()">restart</div>
         <div class="cloud cloudBack" onclick="backToHomePage()">back</div>
         <div class="levels">
             <input type="button" class="btnLevel" id="btnEasy" value="easy" onclick="updateLevel(1)">
@@ -25,7 +25,6 @@
     </header>
     <main>
         <section id="mainPage">
-            <!--<input type="button" value="Show Puki!" onclick="showPuki()">-->
             <div class="sunflowerWrapper" data-stars='1'>
                 <img class="sunflowerImg" src="img/sunflower002.png" alt="" id="chal1" onclick="showChal(this.id)">
             </div>

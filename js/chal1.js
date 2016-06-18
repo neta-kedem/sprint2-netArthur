@@ -71,7 +71,6 @@ function chackSentence(elToCheck, index) {
         console.log('true');
         //if you finished all the pics
         if (index == gImages.length - 1) {
-            alert('you won!!');
             reportSolved('chal1');
             return;
             //show next pic
