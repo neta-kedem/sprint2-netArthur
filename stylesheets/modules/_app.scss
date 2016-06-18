@@ -1,0 +1,91 @@
+@media (max-width:767px) {
+    header {
+        text-align: center;
+        .levels {left: 6%;}
+    }
+}
+
+@media(min-width:768px) {
+    header  {
+        height: 30vw;
+        text-align: center;
+        .levels {left: 7%;}
+    }
+}
+@media(min-width:650px) {
+    header {
+        text-align: center;
+        .levels {left: 7%;}
+    }
+}
+@media(max-width:700px) {
+     header {
+        text-align: center;
+        .levels {left: 5%;}
+     }
+}
+@media(max-width:200px) {
+     header {
+        text-align: center;
+        .levels {left: 5%;}
+    }
+}
+@media(min-width:992px) {
+    header {
+        text-align: center;
+    }
+}
+
+@media(min-width:1200px) {
+    header {
+        text-align: center;
+    }
+}
+$cloudSize:1.5vw;
+.cloud {
+    text-align: center;
+    height: 2*$cloudSize;
+    width: 8*$cloudSize;
+    background: lightgray;
+    border-radius: 4*$cloudSize;
+    // border: 0.5px solid black;
+    position: relative;
+    margin-top: 2*$cloudSize;
+    &:before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: -1*$cloudSize;
+        box-sizing: border-box;
+        height: 2*$cloudSize;
+        width: 2*$cloudSize;
+        left: 1.5*$cloudSize;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        background: lightgray;
+        transform: rotate(40deg);
+    }
+    &:after {
+        z-index: -2;
+        content: "";
+        position: absolute;
+        height: 4*$cloudSize;
+        width: 4*$cloudSize;
+        top: -2*$cloudSize;
+        left: 3.2*$cloudSize;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border-bottom-color: transparent;
+        background: lightgray;
+        border-right-color: transparent;
+        transform: rotate(55deg);
+    }
+}
+
+
+
+@import 'chal1';
+@import 'chal2';
+@import 'chal3';
+@import 'chal4';

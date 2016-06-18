@@ -1,0 +1,74 @@
+.full {
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    float: left;
+}
+
+.tdGame2 {
+    font-size: 3vw;
+    height: 2vw;
+}
+
+.totalyhidden {
+    visibility: hidden;
+    border: 0;
+}
+
+.tblAnswers2 {
+    width: 3vw;
+    color: yellowgreen;
+    background: green;
+    border: 1px solid black;
+}
+
+.tblQuests2 {
+    color: yellowgreen;
+    background: red;
+    border: 1px solid black;
+    width: 6vw;
+}
+
+.quests {
+    color: yellowgreen;
+    background: red;
+    border: 1px solid black;
+    width: 6vw;
+}
+
+.divAnswers2 {
+    position: absolute;
+    right: 4vw;
+}
+
+.template {
+    display: none;
+}
+
+#chal2 {
+    position: relative;
+}
+
+.questsChal2Container {
+    left: 5%;
+    width: 70%;
+    height: 30vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // top: 20px;
+}
+
+.divAnswers2 {
+    right: 2.5%;
+    position: absolute;
+    display: flex;
+    width: 20%;
+    height: 30vh;
+    // top: 20px;
+}
+
+.tdhidden {
+    border: 0;
+    color: transparent;
+}

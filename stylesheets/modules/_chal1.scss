@@ -1,0 +1,18 @@
+
+.img1-container {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+.img1-container>img {
+    height: 40vh;
+    width: 100%;
+}
+.sentences {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.template{
+    display: none;
+}

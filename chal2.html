@@ -1,0 +1,40 @@
+<!doctype html>
+<!--<html lang="en">-->
+<!--<html lang="en" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false; ">-->
+<html lang="en" style="user-select:none;" unselectable="on" onselectstart="return false;" oncontextmenu="return false;">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>I like Coding</title>
+    <link rel="stylesheet " href="../stylesheets/main.css " />
+    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js "></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js "></script>
+    <script src="lib/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body onload="startChal2() ">
+
+    <header>
+        <div class="sun"></div>
+        <h1>Match The Number</h1>
+        <div class="cloud cloudRestart" onclick="restart()">restart</div>
+        <div class="cloud cloudBack" onclick="backToHomePage()">back</div>
+    </header>
+
+    <main>
+        <section id="chal2">
+            <div class="questsChal2Container"></div>
+            <div class="answersChal2Container"></div>
+        </section>
+    </main>
+
+    <script src="js/chal.js "></script>
+    <script src="js/general.js "></script>
+    <script src="js/chal2.js "></script>
+
+</body>
+
+</html>

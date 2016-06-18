@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>I like Coding</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="renderindex()">
+    <header>
+        <div class="sun"></div>
+        <h1>Puki's hideaway</h1>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-success active">
+                <input type="radio" name="options" id="1" autocomplete="off" checked onclick="updateLevel(this.id)"> easy
+            </label>
+            <label class="btn btn-warning">
+                <input type="radio" name="options" id="2" autocomplete="off" onclick="updateLevel(this.id)"> medium
+            </label>
+            <label class="btn btn-danger">
+                <input type="radio" name="options" id="3" autocomplete="off" onclick="updateLevel(this.id)"> hard
+            </label>
+        </div>
+        <!--<div class="levels">
+            <input type="button" id="btnEasy" value="easy" onclick="setLevel(this.id)">
+            <input type="button" id="btnMedium" value="medium" onclick="setLevel(this.id)">
+            <input type="button" id="btnHard" value="hard" onclick="setLevel(this.id)">
+        </div>-->
+    </header>
+    <main>
+        <section id="mainPage">
+            <div class="sunflowerWrapper" data-stars='1'>
+                <img src="img/sunflower002.png" alt="" id="chal1" onclick="showChal(this.id)">
+            </div>
+
+            </div>
+            <div class="sunflowerWrapper" data-stars='2'>
+                <img src="img/sunflower002.png" alt="" id="chal2" onclick="showChal(this.id)">
+
+            </div>
+            <div class="sunflowerWrapper" data-stars='3'>
+                <img src="img/sunflower002.png" alt="" id="chal3" onclick="showChal(this.id)">
+            </div>
+            <div class="sunflowerWrapper" data-stars='4'>
+                <img src="img/sunflower002.png" alt="" id="chal4" onclick="showChal(this.id)">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+            40%
+        </div>
+    </footer>
+
+    <script src="js/general.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/chal.js"></script>
+
+</body>
+
+</html>

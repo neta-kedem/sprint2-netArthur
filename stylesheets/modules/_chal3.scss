@@ -1,0 +1,75 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 180px; 
+    // display: inline;
+    div {
+        width: 20%;
+    }
+    .sun {
+        // width: 25%;
+        position: inherit;
+        left: 4%;
+        top: 22px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 5vh;
+        width: 50%;
+    }
+}
+#chal3 {
+    position: relative;
+}
+#questsImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.questsChal3Container {
+    left: 5%;
+    width: 70%;
+    height: 30vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+}
+.answersChal3Container {
+    right: 2.5%;
+    position: absolute;
+    display: flex;
+    width: 20%;
+    height: 30vh;
+    top: 20px;
+}
+.rowQuests {
+    display: flex;
+}
+.colAnswers {
+    display: flex;
+    flex-direction: column;
+}
+.quest {
+    width: 25%;
+    height: 7.3vh;
+    display: flex;
+    align-items: center;
+    color: yellowgreen;
+    background: red;
+    border: 1px solid black;
+}
+.answer {
+    // float: left;
+    display: flex;
+    align-items: center;
+    // float: right;
+    color: yellowgreen;
+    background: green;
+    // width: 2em;
+    width: 4vh;
+    // height: 3.75vw;
+    height: 25%;
+    border: 1px solid black;
+}
